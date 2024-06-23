@@ -106,15 +106,53 @@ uni-image>img {
 
 .btn-xl{
 	width: 100%;
-	
+	position: relative;
 	font-size: 32rpx !important;
 	/deep/ .u-button{
 		height: 96rpx !important;
 	}
 }
-
-
-
+#sign-in{
+		width: 100%;
+		height: 96rpx;
+		background: #EC6A25;
+		font-weight: 800;
+		font-family: 'HONOR-Bold';
+		border-radius: 142rpx 142rpx 142rpx 142rpx;
+		text-align: center;
+		line-height: 96rpx;
+	
+		color: #fff;
+		font-size: 32rpx;
+		&.disabled {
+			background: rgba(255, 255, 255, 0.2);
+			color: #343434;
+		}
+	}
+#userBox{
+  .cl-button{
+		width: 64rpx;
+		height: 64rpx;
+	}
+  .cl-avatarBox{
+		border-radius: 50%;
+	}
+}
+	.cl-avatarBox{
+				width: 100%;
+				height: 100%;
+				border-radius: 32rpx;
+			}
+			
+			#auth{
+				.cl-button{
+					position: absolute;
+					width: 100%;
+					opacity: 0;
+					top: 0;
+					left: 0;
+				}
+			}
 /* ==================
           文本
  ==================== */
