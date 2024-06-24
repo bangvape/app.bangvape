@@ -1,0 +1,23 @@
+
+
+
+
+/* @font-face {
+    font-family: my-font;
+    src: url(data:application/font-ttf;charset=utf-8;base64,生成出来的base64字符串) format('truetype');
+} */
+
+@font-face {
+    font-family: MontserratAlternates;
+    src: url('/static/fonts/MontserratAlternates/MontserratAlternates-Regular-17.otf') format('otf');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: MontserratAlternates-Bold;
+    src: url('/static/fonts/MontserratAlternates/MontserratAlternates-Bold-12.otf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

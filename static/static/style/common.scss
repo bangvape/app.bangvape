@@ -1,0 +1,675 @@
+/* ==================
+        初始化
+ ==================== */
+body, html{
+	height: auto !important;
+}
+body {
+    background-color: #1c1c1c;
+	background: url(/static/images/bg.png) no-repeat;
+	background-size: 100% 100%;
+    font-size: 28upx;
+    color: #fff;
+    font-family: 'HONOR';
+	min-height: 100vh;
+}
+uni-page-body {
+	// background: url(/static/images/bg.png) no-repeat;
+    color: #fff !important;
+}
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+    box-sizing: border-box;
+}
+
+uni-image>img {
+   
+    opacity: initial;
+}
+
+/deep/ .u-input__content__clear{
+	width: 35rpx;
+	height: 35rpx;
+	transform: scale(1);
+}
+/deep/ .uicon-close{
+	// font-size: 10px !important;
+}
+/deep/ .u-loadmore__content__text{
+	font-size: 28rpx !important;
+	line-height: 28rpx !important;
+}
+/deep/ .u-loading-icon__spinner{
+	width: 30rpx !important;
+	    height: 30rpx !important;
+}
+/deep/ uni-toast {
+	z-index: 11000 !important;
+}
+/deep/ uni-toast .uni-sample-toast{
+	transition: bounce-in-bottom 2s ease ;
+}
+/deep/ uni-toast .uni-simple-toast__text {
+   
+    color: #EC6A25;
+    background-color: #000000;
+    padding: 26rpx 48rpx;
+    border-radius: 64rpx;
+    font-weight: bold;
+    font-size: 24rpx;
+	font-family: 'HONOR-Bold';
+	 
+}
+@keyframes bounce-in-bottom {
+  0% {
+    opacity: 0;
+	top: 150%;
+  }
+  60% {
+    opacity: 1;
+	top: 100%;
+  }
+  80% { top: 40%; }
+  100% { top: 50%; }
+}
+/deep/ .u-button--primary{
+	background: #EC6A25 !important;
+	border: 0 !important;
+	
+	border-radius: 142rpx !important;
+	font-weight: 800;
+	font-size: 32rpx !important;
+	font-family: 'HONOR-ExtraBold' !important; 
+}
+/deep/ .u-button--info{
+	background: rgba(255, 255, 255, 0.1) !important;
+	border: 0 !important;
+	font-size: 32rpx !important;
+	border-radius: 142rpx !important;
+	font-weight: 800;
+	
+	color: #fff !important;
+	font-family: 'HONOR-ExtraBold' !important; 
+}
+.btn-lg{
+	width: 370rpx;
+	height: 64rpx !important;
+	font-size: 24rpx !important;
+}
+
+.btn-xl{
+	width: 100%;
+	position: relative;
+	font-size: 32rpx !important;
+	/deep/ .u-button{
+		height: 96rpx !important;
+	}
+}
+#sign-in{
+		width: 100%;
+		height: 96rpx;
+		background: #EC6A25;
+		font-weight: 800;
+		font-family: 'HONOR-Bold';
+		border-radius: 142rpx 142rpx 142rpx 142rpx;
+		text-align: center;
+		line-height: 96rpx;
+	
+		color: #fff;
+		font-size: 32rpx;
+		&.disabled {
+			background: rgba(255, 255, 255, 0.2);
+			color: #343434;
+		}
+	}
+#userBox{
+  .cl-button{
+		width: 64rpx;
+		height: 64rpx;
+	}
+  .cl-avatarBox{
+		border-radius: 50%;
+	}
+}
+	.cl-avatarBox{
+				width: 100%;
+				height: 100%;
+				border-radius: 32rpx;
+			}
+			
+			#auth{
+				.cl-button{
+					position: absolute;
+					width: 100%;
+					opacity: 0;
+					top: 0;
+					left: 0;
+				}
+			}
+/* ==================
+          文本
+ ==================== */
+ .text-center{
+	 text-align: center;
+ }
+.text-bold{
+	font-family: 'HONOR-Bold';
+}
+.text-white-s{
+	color: rgba(255, 255, 255, 0.90);
+}
+.text-gray{
+	color: rgba(255, 255, 255, 0.40);
+}
+.text-xs {
+    font-size: 20upx;
+}
+
+.text-sm {
+    font-size: 24upx;
+}
+.text-md {
+    font-size: 26upx;
+}
+.text-df {
+    font-size: 28upx;
+}
+
+.text-lg {
+    font-size: 32upx;
+}
+
+.text-xl {
+    font-size: 36upx;
+}
+
+.text-xxl {
+    font-size: 44upx;
+}
+
+.text-sl {
+    font-size: 80upx;
+}
+
+.text-xsl {
+    font-size: 120upx;
+}
+
+/*  -- flex弹性布局 -- */
+
+.flex {
+    display: flex;
+}
+
+.basis-xs {
+    flex-basis: 20%;
+}
+.basis-dsf {
+    flex-basis: 25%;
+}
+.basis-sm {
+    flex-basis: 40%;
+}
+
+.basis-df {
+    flex-basis: 50%;
+}
+.basis-df-divider {
+    flex-basis: 48%;
+}
+.basis-lg {
+    flex-basis: 60%;
+}
+
+.basis-xl {
+    flex-basis: 80%;
+}
+
+.flex-sub {
+    flex: 1;
+}
+
+.flex-twice {
+    flex: 2;
+}
+
+.flex-treble {
+    flex: 3;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-center {
+    align-self: flex-center;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+
+/* grid布局 */
+
+/*  -- 内外边距 -- */
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-xs {
+    margin: 8upx;
+}
+
+.margin-sm {
+    margin: 16upx;
+}
+
+.margin {
+    margin: 24upx;
+}
+
+.margin-lg {
+    margin: 32upx;
+}
+
+.margin-xl {
+    margin: 48upx;
+}
+.margin-xxl {
+    margin: 96upx;
+}
+.margin-top-xs {
+    margin-top: 8upx;
+}
+
+.margin-top-sm {
+    margin-top: 16upx;
+}
+
+.margin-top {
+    margin-top: 24upx;
+}
+.margin-normal{
+	margin-top: 32upx;
+}
+.margin-top-lg {
+    margin-top: 32upx;
+}
+
+.margin-top-xl {
+    margin-top: 48upx;
+}
+.margin-top-xxl {
+    margin-top: 96upx;
+}
+.margin-right-xs {
+    margin-right: 8upx;
+}
+
+.margin-right-sm {
+    margin-right: 16upx;
+}
+
+.margin-right {
+    margin-right: 24upx;
+}
+
+.margin-right-lg {
+    margin-right: 32upx;
+}
+
+.margin-right-xl {
+    margin-right: 48upx;
+}
+.margin-right-xxl {
+    margin-right: 96upx;
+}
+.margin-bottom-xs {
+    margin-bottom: 8upx;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 16upx;
+}
+
+.margin-bottom {
+    margin-bottom: 24upx;
+}
+.margin-bottom-m {
+    margin-bottom: 36upx;
+}
+.margin-bottom-lg {
+    margin-bottom: 32upx;
+}
+
+.margin-bottom-xl {
+    margin-bottom: 48upx;
+}
+.margin-bottom-xxl {
+    margin-bottom: 96upx;
+}
+.margin-left-xs {
+    margin-left: 8upx;
+}
+
+.margin-left-sm {
+    margin-left: 16upx;
+}
+
+.margin-left {
+    margin-left: 24upx;
+}
+
+.margin-left-lg {
+    margin-left: 32upx;
+}
+
+.margin-left-xl {
+    margin-left: 48px;
+}
+.margin-left-xxl {
+    margin-left: 96upx;
+}
+.margin-lr-xs {
+    margin-left: 8upx;
+    margin-right: 8upx;
+}
+
+.margin-lr-sm {
+    margin-left: 16upx;
+    margin-right: 16upx;
+}
+
+.margin-lr {
+    margin-left: 24upx;
+    margin-right: 24upx;
+}
+
+.margin-lr-lg {
+    margin-left: 32upx;
+    margin-right: 32upx;
+}
+
+.margin-lr-xl {
+    margin-left: 48upx;
+    margin-right: 48upx;
+}
+
+.margin-tb-xs {
+    margin-top: 8upx;
+    margin-bottom: 8upx;
+}
+
+.margin-tb-sm {
+    margin-top: 16upx;
+    margin-bottom: 16upx;
+}
+
+.margin-tb {
+    margin-top: 24upx;
+    margin-bottom: 24upx;
+}
+
+.margin-tb-lg {
+    margin-top: 32upx;
+    margin-bottom: 32upx;
+}
+
+.margin-tb-xl {
+    margin-top: 48upx;
+    margin-bottom: 48upx;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-xs {
+    padding: 8upx;
+}
+
+.padding-sm {
+    padding: 16upx;
+}
+
+.padding {
+    padding: 24upx;
+}
+
+.padding-lg {
+    padding: 32upx;
+}
+
+.padding-xl {
+    padding: 48upx;
+}
+.padding-xxl {
+    padding: 96upx;
+}
+.padding-top-xs {
+    padding-top: 8upx;
+}
+
+.padding-top-sm {
+    padding-top: 16upx;
+}
+
+.padding-top {
+    padding-top: 24upx;
+}
+
+.padding-top-lg {
+    padding-top: 32upx;
+}
+
+.padding-top-xl {
+    padding-top: 48upx;
+}
+.padding-top-xxl {
+    padding-top: 96upx;
+}
+.padding-right-xs {
+    padding-right: 8upx;
+}
+
+.padding-right-sm {
+    padding-right: 16upx;
+}
+
+.padding-right {
+    padding-right: 24upx;
+}
+
+.padding-right-lg {
+    padding-right: 32upx;
+}
+
+.padding-right-xl {
+    padding-right: 48upx;
+}
+.padding-right-xxl {
+    padding-right: 96upx;
+}
+.padding-bottom-xs {
+    padding-bottom: 8upx;
+}
+
+.padding-bottom-sm {
+    padding-bottom: 16upx;
+}
+
+.padding-bottom {
+    padding-bottom: 24upx;
+}
+.padding-bottom-md {
+    padding-bottom: 32upx;
+}
+.padding-bottom-lg {
+    padding-bottom: 32upx;
+}
+
+.padding-bottom-xl {
+    padding-bottom: 48upx;
+}
+.padding-bottom-xxl {
+    padding-bottom: 96upx;
+}
+.padding-left-xs {
+    padding-left: 8upx;
+}
+
+.padding-left-sm {
+    padding-left: 16upx;
+}
+
+.padding-left {
+    padding-left: 24upx;
+}
+
+.padding-left-lg {
+    padding-left: 32upx;
+}
+
+.padding-left-xl {
+    padding-left: 48upx;
+}
+.padding-left-xxl {
+    padding-left: 96upx;
+}
+.padding-lr-xs {
+    padding-left: 8upx;
+    padding-right: 8upx;
+}
+
+.padding-lr-sm {
+    padding-left: 16upx;
+    padding-right: 16upx;
+}
+
+.padding-lr {
+    padding-left: 24upx;
+    padding-right: 24upx;
+}
+
+.padding-lr-lg {
+    padding-left: 32upx;
+    padding-right: 32upx;
+}
+.padding-lr-xl {
+    padding-left: 48upx;
+    padding-right: 48upx;
+}
+.padding-lr-xxl {
+    padding-left: 96upx;
+    padding-right: 96upx;
+}
+
+.padding-tb-xs {
+    padding-top: 8upx;
+    padding-bottom: 8upx;
+}
+
+.padding-tb-sm {
+    padding-top: 16upx;
+    padding-bottom: 16upx;
+}
+
+.padding-tb {
+    padding-top: 24upx;
+    padding-bottom: 24upx;
+}
+
+.padding-tb-lg {
+    padding-top: 32upx;
+    padding-bottom: 32upx;
+}
+
+.padding-tb-xl {
+    padding-top: 48upx;
+    padding-bottom: 48upx;
+}
+
+.padding-tb-xxl {
+    padding-top: 96upx;
+    padding-bottom: 96upx;
+}
+/* -- 浮动 --  */
+
+.cf::after,
+.cf::before {
+    content: " ";
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
