@@ -58,13 +58,13 @@ uni-image>img {
 }
 /deep/ uni-toast .uni-simple-toast__text {
    
-    color: #EC6A25;
-    background-color: #000000;
-    padding: 26rpx 48rpx;
-    border-radius: 64rpx;
+    color: #EC6A25 !important;
+    background-color: #000000 !important;
+    padding: 26rpx 48rpx !important;
+    border-radius: 64rpx !important;
     font-weight: bold;
-    font-size: 24rpx;
-	font-family: 'HONOR-Bold';
+    font-size: 24rpx !important;
+	font-family: 'HONOR-Bold' !important;
 	 
 }
 @keyframes bounce-in-bottom {
