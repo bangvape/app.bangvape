@@ -673,3 +673,9 @@ uni-image>img {
 .fr {
     float: right;
 }
+
+/deep/ uni-toast .uni-toast{
+	background: rgba(0, 0, 0, 0.8) !important;
+	width: 200rpx !important;
+	border-radius: 18rpx !important;
+}
